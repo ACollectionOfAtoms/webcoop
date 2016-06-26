@@ -1,7 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
-# Create your views here.
 def index(request):
-    return HttpResponse("O shit waddup")
+    context = {}
+    return render(request, 'overseer/index.html', context)
